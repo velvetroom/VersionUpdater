@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DAFD563020E6F5C900F721AF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD562F20E6F5C900F721AF /* main.swift */; };
+		DAFD564B20E6F7B000F721AF /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD564A20E6F7B000F721AF /* Tests.swift */; };
+		DAFD564E20E6F7B700F721AF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD564D20E6F7B700F721AF /* main.swift */; };
+		DAFD565520E6F80B00F721AF /* VersionUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD564F20E6F80A00F721AF /* VersionUpdater.swift */; };
+		DAFD565620E6F80B00F721AF /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD565020E6F80A00F721AF /* Shell.swift */; };
+		DAFD565720E6F80B00F721AF /* GitTagFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD565120E6F80A00F721AF /* GitTagFactory.swift */; };
+		DAFD565820E6F80B00F721AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD565220E6F80B00F721AF /* Constants.swift */; };
+		DAFD565920E6F80B00F721AF /* ErrorUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD565320E6F80B00F721AF /* ErrorUpdater.swift */; };
+		DAFD565A20E6F80B00F721AF /* GitTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD565420E6F80B00F721AF /* GitTag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,11 +31,31 @@
 
 /* Begin PBXFileReference section */
 		DAFD562C20E6F5C900F721AF /* VersionUpdater */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VersionUpdater; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAFD562F20E6F5C900F721AF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DAFD563A20E6F65600F721AF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFD564220E6F75E00F721AF /* Configuration */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Configuration; sourceTree = "<group>"; };
+		DAFD564320E6F75E00F721AF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DAFD564420E6F75F00F721AF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DAFD564520E6F77C00F721AF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		DAFD564620E6F79900F721AF /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
+		DAFD564A20E6F7B000F721AF /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		DAFD564D20E6F7B700F721AF /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DAFD564F20E6F80A00F721AF /* VersionUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionUpdater.swift; sourceTree = "<group>"; };
+		DAFD565020E6F80A00F721AF /* Shell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
+		DAFD565120E6F80A00F721AF /* GitTagFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitTagFactory.swift; sourceTree = "<group>"; };
+		DAFD565220E6F80B00F721AF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DAFD565320E6F80B00F721AF /* ErrorUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorUpdater.swift; sourceTree = "<group>"; };
+		DAFD565420E6F80B00F721AF /* GitTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitTag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DAFD562920E6F5C900F721AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFD563720E6F65600F721AF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,8 +68,14 @@
 		DAFD562320E6F5C900F721AF = {
 			isa = PBXGroup;
 			children = (
-				DAFD562E20E6F5C900F721AF /* VersionUpdater */,
+				DAFD564C20E6F7B700F721AF /* Source */,
+				DAFD564920E6F7B000F721AF /* Tests */,
 				DAFD562D20E6F5C900F721AF /* Products */,
+				DAFD564220E6F75E00F721AF /* Configuration */,
+				DAFD564620E6F79900F721AF /* Scripts */,
+				DAFD564320E6F75E00F721AF /* LICENSE */,
+				DAFD564420E6F75F00F721AF /* README.md */,
+				DAFD564520E6F77C00F721AF /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,16 +83,31 @@
 			isa = PBXGroup;
 			children = (
 				DAFD562C20E6F5C900F721AF /* VersionUpdater */,
+				DAFD563A20E6F65600F721AF /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DAFD562E20E6F5C900F721AF /* VersionUpdater */ = {
+		DAFD564920E6F7B000F721AF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				DAFD562F20E6F5C900F721AF /* main.swift */,
+				DAFD564A20E6F7B000F721AF /* Tests.swift */,
 			);
-			path = VersionUpdater;
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		DAFD564C20E6F7B700F721AF /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DAFD564D20E6F7B700F721AF /* main.swift */,
+				DAFD565220E6F80B00F721AF /* Constants.swift */,
+				DAFD565320E6F80B00F721AF /* ErrorUpdater.swift */,
+				DAFD565420E6F80B00F721AF /* GitTag.swift */,
+				DAFD565120E6F80A00F721AF /* GitTagFactory.swift */,
+				DAFD565020E6F80A00F721AF /* Shell.swift */,
+				DAFD564F20E6F80A00F721AF /* VersionUpdater.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +130,23 @@
 			productReference = DAFD562C20E6F5C900F721AF /* VersionUpdater */;
 			productType = "com.apple.product-type.tool";
 		};
+		DAFD563920E6F65600F721AF /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAFD563F20E6F65600F721AF /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				DAFD563620E6F65600F721AF /* Sources */,
+				DAFD563720E6F65600F721AF /* Frameworks */,
+				DAFD563820E6F65600F721AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = DAFD563A20E6F65600F721AF /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +158,9 @@
 				ORGANIZATIONNAME = iturbide;
 				TargetAttributes = {
 					DAFD562B20E6F5C900F721AF = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					DAFD563920E6F65600F721AF = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -110,16 +178,41 @@
 			projectRoot = "";
 			targets = (
 				DAFD562B20E6F5C900F721AF /* VersionUpdater */,
+				DAFD563920E6F65600F721AF /* Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAFD563820E6F65600F721AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DAFD562820E6F5C900F721AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAFD563020E6F5C900F721AF /* main.swift in Sources */,
+				DAFD565820E6F80B00F721AF /* Constants.swift in Sources */,
+				DAFD565620E6F80B00F721AF /* Shell.swift in Sources */,
+				DAFD565A20E6F80B00F721AF /* GitTag.swift in Sources */,
+				DAFD565520E6F80B00F721AF /* VersionUpdater.swift in Sources */,
+				DAFD565720E6F80B00F721AF /* GitTagFactory.swift in Sources */,
+				DAFD565920E6F80B00F721AF /* ErrorUpdater.swift in Sources */,
+				DAFD564E20E6F7B700F721AF /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFD563620E6F65600F721AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFD564B20E6F7B000F721AF /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +227,6 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -182,7 +274,9 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -194,7 +288,6 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -220,7 +313,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -235,7 +328,9 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -259,6 +354,40 @@
 			};
 			name = Release;
 		};
+		DAFD564020E6F65600F721AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7AMWG3RLHN;
+				INFOPLIST_FILE = Configuration/tests.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iturbide.VersionUpdater.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DAFD564120E6F65600F721AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7AMWG3RLHN;
+				INFOPLIST_FILE = Configuration/tests.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iturbide.VersionUpdater.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -276,6 +405,15 @@
 			buildConfigurations = (
 				DAFD563420E6F5C900F721AF /* Debug */,
 				DAFD563520E6F5C900F721AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAFD563F20E6F65600F721AF /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFD564020E6F65600F721AF /* Debug */,
+				DAFD564120E6F65600F721AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
