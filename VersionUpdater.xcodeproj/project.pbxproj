@@ -29,8 +29,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DA1BAFD120E717CA00D94853 /* libSwiftToShell.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSwiftToShell.dylib; path = ".build/x86_64-apple-macosx10.10/debug/libSwiftToShell.dylib"; sourceTree = "<group>"; };
-		DAE1ECA120E70D64000C0FFE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		DAFD562C20E6F5C900F721AF /* VersionUpdater */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VersionUpdater; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFD563A20E6F65600F721AF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFD564220E6F75E00F721AF /* Configuration */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Configuration; sourceTree = "<group>"; };
@@ -65,14 +63,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DA1BAFD020E717CA00D94853 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DA1BAFD120E717CA00D94853 /* libSwiftToShell.dylib */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		DAFD562320E6F5C900F721AF = {
 			isa = PBXGroup;
 			children = (
@@ -81,11 +71,9 @@
 				DAFD562D20E6F5C900F721AF /* Products */,
 				DAFD564220E6F75E00F721AF /* Configuration */,
 				DAFD564620E6F79900F721AF /* Scripts */,
-				DAE1ECA120E70D64000C0FFE /* Package.swift */,
 				DAFD564320E6F75E00F721AF /* LICENSE */,
 				DAFD564420E6F75F00F721AF /* README.md */,
 				DAFD564520E6F77C00F721AF /* .gitignore */,
-				DA1BAFD020E717CA00D94853 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
