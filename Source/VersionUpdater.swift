@@ -1,20 +1,21 @@
 import Foundation
+import SwiftToShell
 
 class Updater {
     private let arguments:[String]
-    private let shell:Shell
+//    private let shell:Shell
     
     init() {
-        self.shell = Shell()
-        self.arguments = CommandLine.arguments
-        print(self.shell.execute(input:Constants.Git.listTags))/*
+//        self.shell = Shell()
+        self.arguments = CommandLine.arguments/*
+        print(self.shell.execute(input:Constants.Git.listTags))
         do {
             try update()
         } catch let error {
             print(error.localizedDescription)
         }*/
     }
-    
+    /*
     private func update() throws {
         let commits:String = try self.getCommits()
         let plist:[String:Any] = try self.getPlist()
@@ -56,7 +57,7 @@ class Updater {
             commitsInt > 0
             else { throw ErrorUpdater.commitsNotFound }
         return commitsString
-    }
+    }*/
     
 //    private func getVersionFrom
 }
