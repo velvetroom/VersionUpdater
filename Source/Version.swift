@@ -1,6 +1,6 @@
 import Foundation
 
-struct GitTag {
+struct Version {
     var mayor:Int
     var minor:Int
     var build:Int

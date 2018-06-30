@@ -7,7 +7,7 @@ class VersionUpdater {
     
     init() {
         let shell:Shell = Shell()
-        shell.execute(input:String())
+        
 //        self.shell = Shell()
         self.arguments = CommandLine.arguments/*
         print(self.shell.execute(input:Constants.Git.listTags))

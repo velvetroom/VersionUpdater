@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DAFD564B20E6F7B000F721AF /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD564A20E6F7B000F721AF /* Tests.swift */; };
+		DA3B9BB820E79CF800596635 /* Versioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B9BB720E79CF800596635 /* Versioner.swift */; };
+		DA3B9BBD20E79DF100596635 /* TestVersionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B9BBC20E79DF100596635 /* TestVersionFactory.swift */; };
+		DA3B9BBF20E79EC500596635 /* SwiftToShell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA079F2A20E723D7009F9093 /* SwiftToShell.framework */; };
+		DAFD564B20E6F7B000F721AF /* TestVersioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD564A20E6F7B000F721AF /* TestVersioner.swift */; };
 		DAFD564E20E6F7B700F721AF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD564D20E6F7B700F721AF /* main.swift */; };
 		DAFD565520E6F80B00F721AF /* VersionUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD564F20E6F80A00F721AF /* VersionUpdater.swift */; };
-		DAFD565720E6F80B00F721AF /* GitTagFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD565120E6F80A00F721AF /* GitTagFactory.swift */; };
+		DAFD565720E6F80B00F721AF /* VersionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD565120E6F80A00F721AF /* VersionFactory.swift */; };
 		DAFD565820E6F80B00F721AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD565220E6F80B00F721AF /* Constants.swift */; };
 		DAFD565920E6F80B00F721AF /* ErrorUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD565320E6F80B00F721AF /* ErrorUpdater.swift */; };
-		DAFD565A20E6F80B00F721AF /* GitTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD565420E6F80B00F721AF /* GitTag.swift */; };
+		DAFD565A20E6F80B00F721AF /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD565420E6F80B00F721AF /* Version.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,8 @@
 
 /* Begin PBXFileReference section */
 		DA079F2420E723D7009F9093 /* SwiftToShell.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftToShell.xcodeproj; path = SwiftToShell/SwiftToShell.xcodeproj; sourceTree = "<group>"; };
+		DA3B9BB720E79CF800596635 /* Versioner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Versioner.swift; sourceTree = "<group>"; };
+		DA3B9BBC20E79DF100596635 /* TestVersionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVersionFactory.swift; sourceTree = "<group>"; };
 		DAFD562C20E6F5C900F721AF /* VersionUpdater */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VersionUpdater; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFD563A20E6F65600F721AF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFD564220E6F75E00F721AF /* Configuration */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Configuration; sourceTree = "<group>"; };
@@ -61,13 +66,13 @@
 		DAFD564420E6F75F00F721AF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DAFD564520E6F77C00F721AF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		DAFD564620E6F79900F721AF /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
-		DAFD564A20E6F7B000F721AF /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		DAFD564A20E6F7B000F721AF /* TestVersioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestVersioner.swift; sourceTree = "<group>"; };
 		DAFD564D20E6F7B700F721AF /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DAFD564F20E6F80A00F721AF /* VersionUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionUpdater.swift; sourceTree = "<group>"; };
-		DAFD565120E6F80A00F721AF /* GitTagFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitTagFactory.swift; sourceTree = "<group>"; };
+		DAFD565120E6F80A00F721AF /* VersionFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionFactory.swift; sourceTree = "<group>"; };
 		DAFD565220E6F80B00F721AF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DAFD565320E6F80B00F721AF /* ErrorUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorUpdater.swift; sourceTree = "<group>"; };
-		DAFD565420E6F80B00F721AF /* GitTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitTag.swift; sourceTree = "<group>"; };
+		DAFD565420E6F80B00F721AF /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3B9BBF20E79EC500596635 /* SwiftToShell.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,12 +117,12 @@
 				DAFD564C20E6F7B700F721AF /* Source */,
 				DAFD564920E6F7B000F721AF /* Tests */,
 				DAFD562D20E6F5C900F721AF /* Products */,
+				DA4C50F420E7208E00902A64 /* Frameworks */,
 				DAFD564220E6F75E00F721AF /* Configuration */,
 				DAFD564620E6F79900F721AF /* Scripts */,
 				DAFD564320E6F75E00F721AF /* LICENSE */,
 				DAFD564420E6F75F00F721AF /* README.md */,
 				DAFD564520E6F77C00F721AF /* .gitignore */,
-				DA4C50F420E7208E00902A64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,7 +138,8 @@
 		DAFD564920E6F7B000F721AF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				DAFD564A20E6F7B000F721AF /* Tests.swift */,
+				DAFD564A20E6F7B000F721AF /* TestVersioner.swift */,
+				DA3B9BBC20E79DF100596635 /* TestVersionFactory.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -143,9 +150,10 @@
 				DAFD564D20E6F7B700F721AF /* main.swift */,
 				DAFD565220E6F80B00F721AF /* Constants.swift */,
 				DAFD565320E6F80B00F721AF /* ErrorUpdater.swift */,
-				DAFD565420E6F80B00F721AF /* GitTag.swift */,
-				DAFD565120E6F80A00F721AF /* GitTagFactory.swift */,
+				DAFD565420E6F80B00F721AF /* Version.swift */,
+				DAFD565120E6F80A00F721AF /* VersionFactory.swift */,
 				DAFD564F20E6F80A00F721AF /* VersionUpdater.swift */,
+				DA3B9BB720E79CF800596635 /* Versioner.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -262,10 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3B9BB820E79CF800596635 /* Versioner.swift in Sources */,
 				DAFD565820E6F80B00F721AF /* Constants.swift in Sources */,
-				DAFD565A20E6F80B00F721AF /* GitTag.swift in Sources */,
+				DAFD565A20E6F80B00F721AF /* Version.swift in Sources */,
 				DAFD565520E6F80B00F721AF /* VersionUpdater.swift in Sources */,
-				DAFD565720E6F80B00F721AF /* GitTagFactory.swift in Sources */,
+				DAFD565720E6F80B00F721AF /* VersionFactory.swift in Sources */,
 				DAFD565920E6F80B00F721AF /* ErrorUpdater.swift in Sources */,
 				DAFD564E20E6F7B700F721AF /* main.swift in Sources */,
 			);
@@ -275,7 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAFD564B20E6F7B000F721AF /* Tests.swift in Sources */,
+				DAFD564B20E6F7B000F721AF /* TestVersioner.swift in Sources */,
+				DA3B9BBD20E79DF100596635 /* TestVersionFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

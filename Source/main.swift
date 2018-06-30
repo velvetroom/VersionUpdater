@@ -1,12 +1,3 @@
-//
-//  main.swift
-//  VersionUpdater
-//
-//  Created by zero on 30.06.18.
-//  Copyright © 2018 iturbide. All rights reserved.
-//
+#!/usr/bin/swift
 
-import Foundation
-
-print("Hello, World! 2")
-
+let updater:VersionUpdater = VersionUpdater()
