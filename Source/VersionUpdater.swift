@@ -1,11 +1,13 @@
 import Foundation
 import SwiftToShell
 
-class Updater {
+class VersionUpdater {
     private let arguments:[String]
 //    private let shell:Shell
     
     init() {
+        let shell:Shell = Shell()
+        shell.execute(input:String())
 //        self.shell = Shell()
         self.arguments = CommandLine.arguments/*
         print(self.shell.execute(input:Constants.Git.listTags))
