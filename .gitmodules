@@ -1,0 +1,3 @@
+[submodule "SwiftToShell"]
+	path = SwiftToShell
+	url = https://github.com/velvetroom/SwiftToShell.git
