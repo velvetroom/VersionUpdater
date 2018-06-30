@@ -16,23 +16,6 @@
 		DAFD565A20E6F80B00F721AF /* GitTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD565420E6F80B00F721AF /* GitTag.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		DA4C50E220E71AF600902A64 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA4C50D820E71AF600902A64 /* SwiftToShell.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DAFD568420E6FE5300F721AF;
-			remoteInfo = SwiftToShell;
-		};
-		DA4C50E420E71AF600902A64 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA4C50D820E71AF600902A64 /* SwiftToShell.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DAFD569320E6FEDC00F721AF;
-			remoteInfo = Tests;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		DAFD562A20E6F5C900F721AF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -46,15 +29,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DA4C50D320E71AF600902A64 /* tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = tests.plist; sourceTree = "<group>"; };
-		DA4C50D420E71AF600902A64 /* source.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = source.plist; sourceTree = "<group>"; };
-		DA4C50D520E71AF600902A64 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		DA4C50D720E71AF600902A64 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		DA4C50D820E71AF600902A64 /* SwiftToShell.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SwiftToShell.xcodeproj; sourceTree = "<group>"; };
-		DA4C50DB20E71AF600902A64 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		DA4C50DC20E71AF600902A64 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		DA4C50DE20E71AF600902A64 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		DA4C50DF20E71AF600902A64 /* Shell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
 		DAFD562C20E6F5C900F721AF /* VersionUpdater */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VersionUpdater; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFD563A20E6F65600F721AF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFD564220E6F75E00F721AF /* Configuration */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Configuration; sourceTree = "<group>"; };
@@ -89,62 +63,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DA4C50D120E71AF600902A64 /* SwiftToShell */ = {
-			isa = PBXGroup;
-			children = (
-				DA4C50D220E71AF600902A64 /* Configuration */,
-				DA4C50D520E71AF600902A64 /* LICENSE */,
-				DA4C50D620E71AF600902A64 /* Tests */,
-				DA4C50D820E71AF600902A64 /* SwiftToShell.xcodeproj */,
-				DA4C50DB20E71AF600902A64 /* README.md */,
-				DA4C50DC20E71AF600902A64 /* .gitignore */,
-				DA4C50DD20E71AF600902A64 /* Sources */,
-			);
-			path = SwiftToShell;
-			sourceTree = "<group>";
-		};
-		DA4C50D220E71AF600902A64 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				DA4C50D320E71AF600902A64 /* tests.plist */,
-				DA4C50D420E71AF600902A64 /* source.plist */,
-			);
-			path = Configuration;
-			sourceTree = "<group>";
-		};
-		DA4C50D620E71AF600902A64 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				DA4C50D720E71AF600902A64 /* Tests.swift */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		DA4C50D920E71AF600902A64 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DA4C50E320E71AF600902A64 /* SwiftToShell.framework */,
-				DA4C50E520E71AF600902A64 /* Tests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		DA4C50DD20E71AF600902A64 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				DA4C50DE20E71AF600902A64 /* Constants.swift */,
-				DA4C50DF20E71AF600902A64 /* Shell.swift */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
 		DAFD562320E6F5C900F721AF = {
 			isa = PBXGroup;
 			children = (
 				DAFD564C20E6F7B700F721AF /* Source */,
 				DAFD564920E6F7B000F721AF /* Tests */,
 				DAFD562D20E6F5C900F721AF /* Products */,
-				DA4C50D120E71AF600902A64 /* SwiftToShell */,
 				DAFD564220E6F75E00F721AF /* Configuration */,
 				DAFD564620E6F79900F721AF /* Scripts */,
 				DAFD564320E6F75E00F721AF /* LICENSE */,
@@ -248,12 +172,6 @@
 			mainGroup = DAFD562320E6F5C900F721AF;
 			productRefGroup = DAFD562D20E6F5C900F721AF /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = DA4C50D920E71AF600902A64 /* Products */;
-					ProjectRef = DA4C50D820E71AF600902A64 /* SwiftToShell.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				DAFD562B20E6F5C900F721AF /* VersionUpdater */,
@@ -261,23 +179,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		DA4C50E320E71AF600902A64 /* SwiftToShell.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftToShell.framework;
-			remoteRef = DA4C50E220E71AF600902A64 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DA4C50E520E71AF600902A64 /* Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = Tests.xctest;
-			remoteRef = DA4C50E420E71AF600902A64 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DAFD563820E6F65600F721AF /* Resources */ = {
