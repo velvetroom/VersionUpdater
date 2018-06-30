@@ -1,6 +1,6 @@
 import Foundation
 
-struct Version {
+struct Version:Equatable {
     var mayor:Int
     var minor:Int
     var build:Int

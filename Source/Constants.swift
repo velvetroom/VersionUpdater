@@ -15,7 +15,7 @@ struct Constants {
     
     struct Version {
         static let defaultMayor:Int = 1
-        static let defaultMinor:Int = 0
-        static let defaultBuild:Int = 1
+        static let defaultMinor:Int = -1
+        static let defaultBuild:Int = 0
     }
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DA3B9BBD20E79DF100596635 /* TestVersionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B9BBC20E79DF100596635 /* TestVersionFactory.swift */; };
 		DA3B9BBF20E79EC500596635 /* SwiftToShell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA079F2A20E723D7009F9093 /* SwiftToShell.framework */; };
+		DA78D79620E7B0AD007672E3 /* MockShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D79520E7B0AD007672E3 /* MockShell.swift */; };
 		DAA0192520E7A15B0017AC52 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD564D20E6F7B700F721AF /* main.swift */; };
 		DAA0192D20E7A1780017AC52 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192720E7A1780017AC52 /* Constants.swift */; };
 		DAA0192E20E7A1780017AC52 /* VersionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192820E7A1780017AC52 /* VersionFactory.swift */; };
@@ -66,6 +67,7 @@
 /* Begin PBXFileReference section */
 		DA079F2420E723D7009F9093 /* SwiftToShell.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftToShell.xcodeproj; path = SwiftToShell/SwiftToShell.xcodeproj; sourceTree = "<group>"; };
 		DA3B9BBC20E79DF100596635 /* TestVersionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVersionFactory.swift; sourceTree = "<group>"; };
+		DA78D79520E7B0AD007672E3 /* MockShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockShell.swift; sourceTree = "<group>"; };
 		DAA0191120E7A0EB0017AC52 /* Main */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Main; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA0191D20E7A1030017AC52 /* VersionUpdater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VersionUpdater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA0192720E7A1780017AC52 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			children = (
 				DAFD564A20E6F7B000F721AF /* TestVersioner.swift */,
 				DA3B9BBC20E79DF100596635 /* TestVersionFactory.swift */,
+				DA78D79520E7B0AD007672E3 /* MockShell.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			files = (
 				DAFD564B20E6F7B000F721AF /* TestVersioner.swift in Sources */,
 				DA3B9BBD20E79DF100596635 /* TestVersionFactory.swift in Sources */,
+				DA78D79620E7B0AD007672E3 /* MockShell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
