@@ -16,6 +16,30 @@
 		DAFD565A20E6F80B00F721AF /* GitTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD565420E6F80B00F721AF /* GitTag.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DA4C511020E7220B00902A64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA4C510B20E7220B00902A64 /* SwiftToShell.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAFD568420E6FE5300F721AF;
+			remoteInfo = SwiftToShell;
+		};
+		DA4C511220E7220B00902A64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA4C510B20E7220B00902A64 /* SwiftToShell.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAFD569320E6FEDC00F721AF;
+			remoteInfo = Tests;
+		};
+		DA4D8F1620E7222500ABD6CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA4C510B20E7220B00902A64 /* SwiftToShell.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DAFD568320E6FE5300F721AF;
+			remoteInfo = SwiftToShell;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		DAFD562A20E6F5C900F721AF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -29,6 +53,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA4C510B20E7220B00902A64 /* SwiftToShell.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftToShell.xcodeproj; path = SwiftToShell/SwiftToShell.xcodeproj; sourceTree = "<group>"; };
 		DAFD562C20E6F5C900F721AF /* VersionUpdater */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VersionUpdater; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFD563A20E6F65600F721AF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFD564220E6F75E00F721AF /* Configuration */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Configuration; sourceTree = "<group>"; };
@@ -63,6 +88,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA4C50F420E7208E00902A64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA4C510B20E7220B00902A64 /* SwiftToShell.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA4C510C20E7220B00902A64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA4C511120E7220B00902A64 /* SwiftToShell.framework */,
+				DA4C511320E7220B00902A64 /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		DAFD562320E6F5C900F721AF = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +116,7 @@
 				DAFD564320E6F75E00F721AF /* LICENSE */,
 				DAFD564420E6F75F00F721AF /* README.md */,
 				DAFD564520E6F77C00F721AF /* .gitignore */,
+				DA4C50F420E7208E00902A64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +164,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DA4D8F1720E7222500ABD6CF /* PBXTargetDependency */,
 			);
 			name = VersionUpdater;
 			productName = VersionUpdater;
@@ -172,6 +216,12 @@
 			mainGroup = DAFD562320E6F5C900F721AF;
 			productRefGroup = DAFD562D20E6F5C900F721AF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DA4C510C20E7220B00902A64 /* Products */;
+					ProjectRef = DA4C510B20E7220B00902A64 /* SwiftToShell.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DAFD562B20E6F5C900F721AF /* VersionUpdater */,
@@ -179,6 +229,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DA4C511120E7220B00902A64 /* SwiftToShell.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftToShell.framework;
+			remoteRef = DA4C511020E7220B00902A64 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DA4C511320E7220B00902A64 /* Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.xctest;
+			remoteRef = DA4C511220E7220B00902A64 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DAFD563820E6F65600F721AF /* Resources */ = {
@@ -213,6 +280,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA4D8F1720E7222500ABD6CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftToShell;
+			targetProxy = DA4D8F1620E7222500ABD6CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		DAFD563120E6F5C900F721AF /* Debug */ = {
@@ -335,10 +410,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/.build/x86_64-apple-macosx10.10/debug",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -349,10 +420,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/.build/x86_64-apple-macosx10.10/debug",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
