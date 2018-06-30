@@ -12,4 +12,10 @@ struct Constants {
         static let listTags:String = "git tag --sort=-refname"
         static let separator:String = "."
     }
+    
+    struct Version {
+        static let defaultMayor:Int = 1
+        static let defaultMinor:Int = 0
+        static let defaultBuild:Int = 1
+    }
 }
