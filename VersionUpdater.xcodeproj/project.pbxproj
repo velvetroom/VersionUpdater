@@ -10,6 +10,14 @@
 		DA3B9BBD20E79DF100596635 /* TestVersionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B9BBC20E79DF100596635 /* TestVersionFactory.swift */; };
 		DA3B9BBF20E79EC500596635 /* SwiftToShell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA079F2A20E723D7009F9093 /* SwiftToShell.framework */; };
 		DA78D79620E7B0AD007672E3 /* MockShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D79520E7B0AD007672E3 /* MockShell.swift */; };
+		DA78D79820E7B4F7007672E3 /* Updater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D79720E7B4F7007672E3 /* Updater.swift */; };
+		DA78D79A20E7B527007672E3 /* TestUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D79920E7B527007672E3 /* TestUpdater.swift */; };
+		DA78D79C20E7B6A3007672E3 /* ReaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D79B20E7B6A3007672E3 /* ReaderProtocol.swift */; };
+		DA78D79E20E7B6B0007672E3 /* WriterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D79D20E7B6B0007672E3 /* WriterProtocol.swift */; };
+		DA78D7A020E7BAD1007672E3 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D79F20E7BAD1007672E3 /* Reader.swift */; };
+		DA78D7A220E7BB13007672E3 /* Writer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D7A120E7BB13007672E3 /* Writer.swift */; };
+		DA78D7A420E7BBB9007672E3 /* MockReaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D7A320E7BBB9007672E3 /* MockReaderProtocol.swift */; };
+		DA78D7A620E7BBC1007672E3 /* MockWriterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D7A520E7BBC1007672E3 /* MockWriterProtocol.swift */; };
 		DAA0192520E7A15B0017AC52 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD564D20E6F7B700F721AF /* main.swift */; };
 		DAA0192D20E7A1780017AC52 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192720E7A1780017AC52 /* Constants.swift */; };
 		DAA0192E20E7A1780017AC52 /* VersionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192820E7A1780017AC52 /* VersionFactory.swift */; };
@@ -68,6 +76,14 @@
 		DA079F2420E723D7009F9093 /* SwiftToShell.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftToShell.xcodeproj; path = SwiftToShell/SwiftToShell.xcodeproj; sourceTree = "<group>"; };
 		DA3B9BBC20E79DF100596635 /* TestVersionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVersionFactory.swift; sourceTree = "<group>"; };
 		DA78D79520E7B0AD007672E3 /* MockShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockShell.swift; sourceTree = "<group>"; };
+		DA78D79720E7B4F7007672E3 /* Updater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updater.swift; sourceTree = "<group>"; };
+		DA78D79920E7B527007672E3 /* TestUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUpdater.swift; sourceTree = "<group>"; };
+		DA78D79B20E7B6A3007672E3 /* ReaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderProtocol.swift; sourceTree = "<group>"; };
+		DA78D79D20E7B6B0007672E3 /* WriterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriterProtocol.swift; sourceTree = "<group>"; };
+		DA78D79F20E7BAD1007672E3 /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
+		DA78D7A120E7BB13007672E3 /* Writer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Writer.swift; sourceTree = "<group>"; };
+		DA78D7A320E7BBB9007672E3 /* MockReaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockReaderProtocol.swift; sourceTree = "<group>"; };
+		DA78D7A520E7BBC1007672E3 /* MockWriterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWriterProtocol.swift; sourceTree = "<group>"; };
 		DAA0191120E7A0EB0017AC52 /* Main */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Main; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA0191D20E7A1030017AC52 /* VersionUpdater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VersionUpdater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA0192720E7A1780017AC52 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -138,6 +154,11 @@
 				DAA0192820E7A1780017AC52 /* VersionFactory.swift */,
 				DAA0192920E7A1780017AC52 /* Version.swift */,
 				DAA0192B20E7A1780017AC52 /* Versioner.swift */,
+				DA78D79720E7B4F7007672E3 /* Updater.swift */,
+				DA78D79B20E7B6A3007672E3 /* ReaderProtocol.swift */,
+				DA78D79F20E7BAD1007672E3 /* Reader.swift */,
+				DA78D79D20E7B6B0007672E3 /* WriterProtocol.swift */,
+				DA78D7A120E7BB13007672E3 /* Writer.swift */,
 				DAA0192C20E7A1780017AC52 /* VersionUpdater.swift */,
 			);
 			path = Source;
@@ -172,9 +193,12 @@
 		DAFD564920E6F7B000F721AF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				DA78D79920E7B527007672E3 /* TestUpdater.swift */,
 				DAFD564A20E6F7B000F721AF /* TestVersioner.swift */,
 				DA3B9BBC20E79DF100596635 /* TestVersionFactory.swift */,
 				DA78D79520E7B0AD007672E3 /* MockShell.swift */,
+				DA78D7A320E7BBB9007672E3 /* MockReaderProtocol.swift */,
+				DA78D7A520E7BBC1007672E3 /* MockWriterProtocol.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -342,9 +366,14 @@
 				DAA0193120E7A1780017AC52 /* Versioner.swift in Sources */,
 				DAA0193020E7A1780017AC52 /* ErrorVersionUpdater.swift in Sources */,
 				DAA0193220E7A1780017AC52 /* VersionUpdater.swift in Sources */,
+				DA78D7A020E7BAD1007672E3 /* Reader.swift in Sources */,
+				DA78D79E20E7B6B0007672E3 /* WriterProtocol.swift in Sources */,
+				DA78D79C20E7B6A3007672E3 /* ReaderProtocol.swift in Sources */,
 				DAA0192D20E7A1780017AC52 /* Constants.swift in Sources */,
 				DAA0192F20E7A1780017AC52 /* Version.swift in Sources */,
 				DAA0192E20E7A1780017AC52 /* VersionFactory.swift in Sources */,
+				DA78D79820E7B4F7007672E3 /* Updater.swift in Sources */,
+				DA78D7A220E7BB13007672E3 /* Writer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +382,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAFD564B20E6F7B000F721AF /* TestVersioner.swift in Sources */,
+				DA78D79A20E7B527007672E3 /* TestUpdater.swift in Sources */,
 				DA3B9BBD20E79DF100596635 /* TestVersionFactory.swift in Sources */,
+				DA78D7A420E7BBB9007672E3 /* MockReaderProtocol.swift in Sources */,
+				DA78D7A620E7BBC1007672E3 /* MockWriterProtocol.swift in Sources */,
 				DA78D79620E7B0AD007672E3 /* MockShell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
