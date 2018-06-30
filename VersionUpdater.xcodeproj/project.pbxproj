@@ -13,7 +13,7 @@
 		DAA0192D20E7A1780017AC52 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192720E7A1780017AC52 /* Constants.swift */; };
 		DAA0192E20E7A1780017AC52 /* VersionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192820E7A1780017AC52 /* VersionFactory.swift */; };
 		DAA0192F20E7A1780017AC52 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192920E7A1780017AC52 /* Version.swift */; };
-		DAA0193020E7A1780017AC52 /* ErrorUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192A20E7A1780017AC52 /* ErrorUpdater.swift */; };
+		DAA0193020E7A1780017AC52 /* ErrorVersionUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192A20E7A1780017AC52 /* ErrorVersionUpdater.swift */; };
 		DAA0193120E7A1780017AC52 /* Versioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192B20E7A1780017AC52 /* Versioner.swift */; };
 		DAA0193220E7A1780017AC52 /* VersionUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192C20E7A1780017AC52 /* VersionUpdater.swift */; };
 		DAA0193520E7A2630017AC52 /* VersionUpdater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA0191D20E7A1030017AC52 /* VersionUpdater.framework */; };
@@ -71,7 +71,7 @@
 		DAA0192720E7A1780017AC52 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DAA0192820E7A1780017AC52 /* VersionFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionFactory.swift; sourceTree = "<group>"; };
 		DAA0192920E7A1780017AC52 /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
-		DAA0192A20E7A1780017AC52 /* ErrorUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorUpdater.swift; sourceTree = "<group>"; };
+		DAA0192A20E7A1780017AC52 /* ErrorVersionUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorVersionUpdater.swift; sourceTree = "<group>"; };
 		DAA0192B20E7A1780017AC52 /* Versioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Versioner.swift; sourceTree = "<group>"; };
 		DAA0192C20E7A1780017AC52 /* VersionUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionUpdater.swift; sourceTree = "<group>"; };
 		DAFD563A20E6F65600F721AF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,10 +131,10 @@
 		DAA0192620E7A1780017AC52 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				DAA0192A20E7A1780017AC52 /* ErrorVersionUpdater.swift */,
 				DAA0192720E7A1780017AC52 /* Constants.swift */,
 				DAA0192820E7A1780017AC52 /* VersionFactory.swift */,
 				DAA0192920E7A1780017AC52 /* Version.swift */,
-				DAA0192A20E7A1780017AC52 /* ErrorUpdater.swift */,
 				DAA0192B20E7A1780017AC52 /* Versioner.swift */,
 				DAA0192C20E7A1780017AC52 /* VersionUpdater.swift */,
 			);
@@ -337,7 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA0193120E7A1780017AC52 /* Versioner.swift in Sources */,
-				DAA0193020E7A1780017AC52 /* ErrorUpdater.swift in Sources */,
+				DAA0193020E7A1780017AC52 /* ErrorVersionUpdater.swift in Sources */,
 				DAA0193220E7A1780017AC52 /* VersionUpdater.swift in Sources */,
 				DAA0192D20E7A1780017AC52 /* Constants.swift in Sources */,
 				DAA0192F20E7A1780017AC52 /* Version.swift in Sources */,
