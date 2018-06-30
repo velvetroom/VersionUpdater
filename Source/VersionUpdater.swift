@@ -1,11 +1,11 @@
 import Foundation
 import SwiftToShell
 
-class VersionUpdater {
+public class VersionUpdater {
     private let arguments:[String]
 //    private let shell:Shell
     
-    init() {
+    public init() {
         let shell:Shell = Shell()
         
 //        self.shell = Shell()
