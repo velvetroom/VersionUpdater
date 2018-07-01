@@ -18,7 +18,7 @@ class TestVersioner:XCTestCase {
         self.shell.returnString = "\(value)"
         var expected:Version = Version()
         expected.mayor = value
-        expected.minor = Constants.Version.defaultMinor + 1
+        expected.minor = VersionUpdaterConstants.Version.defaultMinor + 1
         expected.build = value + 1
         let version:Version = self.model.nextVersion()
         XCTAssertEqual(expected, version, "Invalid version")
@@ -32,7 +32,7 @@ class TestVersioner:XCTestCase {
         var expected:Version = Version()
         expected.mayor = mayor
         expected.minor = minor + 1
-        expected.build = Constants.Version.defaultBuild + 1
+        expected.build = VersionUpdaterConstants.Version.defaultBuild + 1
         let version:Version = self.model.nextVersion()
         XCTAssertEqual(expected, version, "Invalid version")
     }

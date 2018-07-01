@@ -19,7 +19,7 @@ class TestWriter:XCTestCase {
     func testUpdateBuild() {
         self.version.build = 99
         do { try self.model.updateProjectAt(path:self.url, with:self.version) } catch { }
-        XCTAssertEqual(self.propertyList.list[Constants.Plist.buildKey] as? String, String(self.version.build),
+        XCTAssertEqual(self.propertyList.list[VersionUpdaterConstants.Plist.buildKey] as? String, String(self.version.build),
                        "Not updated")
     }
     
@@ -29,7 +29,7 @@ class TestWriter:XCTestCase {
         self.version.mayor = 8
         let expectedVersion:String = VersionFactory.makeStringFrom(version:self.version)
         do { try self.model.updateProjectAt(path:self.url, with:self.version) } catch { }
-        XCTAssertEqual(self.propertyList.list[Constants.Plist.versionKey] as? String, expectedVersion,
+        XCTAssertEqual(self.propertyList.list[VersionUpdaterConstants.Plist.versionKey] as? String, expectedVersion,
                        "Not updated")
     }
     

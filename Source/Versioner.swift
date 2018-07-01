@@ -21,7 +21,7 @@ class Versioner:VersionerProtocol {
     }
     
     private func getCurrentBuild() -> Int {
-        let build:String = self.shell.send(message:Constants.Git.countCommits)
+        let build:String = self.shell.send(message:VersionUpdaterConstants.Git.countCommits)
         guard
             let numeric:Int = Int(build)
         else { return 0 }
@@ -37,7 +37,7 @@ class Versioner:VersionerProtocol {
     }
     
     private func getAllTags() -> [String] {
-        let tagString:String = self.shell.send(message:Constants.Git.listTags)
+        let tagString:String = self.shell.send(message:VersionUpdaterConstants.Git.listTags)
         return tagString.components(separatedBy:"\n")
     }
 }

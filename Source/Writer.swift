@@ -20,8 +20,8 @@ class Writer:WriterProtocol {
     
     private func update(project:[String:Any], with version:Version) -> [String:Any] {
         var project:[String:Any] = project
-        project[Constants.Plist.versionKey] = VersionFactory.makeStringFrom(version:version)
-        project[Constants.Plist.buildKey] = String(version.build)
+        project[VersionUpdaterConstants.Plist.versionKey] = VersionFactory.makeStringFrom(version:version)
+        project[VersionUpdaterConstants.Plist.buildKey] = String(version.build)
         return project
     }
 }

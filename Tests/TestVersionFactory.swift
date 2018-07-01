@@ -4,16 +4,16 @@ import XCTest
 class TestVersionFactory:XCTestCase {
     func testMakeFirstVersion() {
         let version:Version = VersionFactory.makeWith(gitTag:String())
-        XCTAssertEqual(version.mayor, Constants.Version.defaultMayor, "Invalid version")
-        XCTAssertEqual(version.minor, Constants.Version.defaultMinor, "Invalid version")
-        XCTAssertEqual(version.build, Constants.Version.defaultBuild, "Invalid version")
+        XCTAssertEqual(version.mayor, VersionUpdaterConstants.Version.defaultMayor, "Invalid version")
+        XCTAssertEqual(version.minor, VersionUpdaterConstants.Version.defaultMinor, "Invalid version")
+        XCTAssertEqual(version.build, VersionUpdaterConstants.Version.defaultBuild, "Invalid version")
     }
     
     func testMakeFirstVersionWhenInvalidTag() {
         let version:Version = VersionFactory.makeWith(gitTag:"Hello world")
-        XCTAssertEqual(version.mayor, Constants.Version.defaultMayor, "Invalid version")
-        XCTAssertEqual(version.minor, Constants.Version.defaultMinor, "Invalid version")
-        XCTAssertEqual(version.build, Constants.Version.defaultBuild, "Invalid version")
+        XCTAssertEqual(version.mayor, VersionUpdaterConstants.Version.defaultMayor, "Invalid version")
+        XCTAssertEqual(version.minor, VersionUpdaterConstants.Version.defaultMinor, "Invalid version")
+        XCTAssertEqual(version.build, VersionUpdaterConstants.Version.defaultBuild, "Invalid version")
     }
     
     func testMakeVersionWithTag() {
@@ -30,7 +30,7 @@ class TestVersionFactory:XCTestCase {
         let mayor:Int = 345
         let version:Version = VersionFactory.makeWith(gitTag:"\(mayor)")
         XCTAssertEqual(version.mayor, mayor, "Invalid version")
-        XCTAssertEqual(version.minor, Constants.Version.defaultMinor, "Invalid version")
+        XCTAssertEqual(version.minor, VersionUpdaterConstants.Version.defaultMinor, "Invalid version")
         XCTAssertEqual(version.build, mayor, "Invalid version")
     }
 }

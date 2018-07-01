@@ -1,6 +1,6 @@
 import Foundation
 
-struct Constants {
+struct VersionUpdaterConstants {
     struct Arguments {
         static let projectLocation:Int = 1
     }

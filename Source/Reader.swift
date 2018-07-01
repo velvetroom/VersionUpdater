@@ -17,9 +17,9 @@ class Reader:ReaderProtocol {
     }
     
     private func getProjectArgument() throws -> String {
-        let argument:String = try self.getArgumentAt(index:Constants.Arguments.projectLocation)
+        let argument:String = try self.getArgumentAt(index:VersionUpdaterConstants.Arguments.projectLocation)
         guard
-            argument.contains(Constants.Plist.fileExtension)
+            argument.contains(VersionUpdaterConstants.Plist.fileExtension)
         else { throw ErrorVersionUpdater.projectNotSpecified }
         return argument
     }
