@@ -163,13 +163,13 @@
 		DAA0192620E7A1780017AC52 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				DA78D79720E7B4F7007672E3 /* Updater.swift */,
 				DAA0192A20E7A1780017AC52 /* ErrorVersionUpdater.swift */,
 				DAA0192720E7A1780017AC52 /* Constants.swift */,
 				DAA0192820E7A1780017AC52 /* VersionFactory.swift */,
 				DAA0192920E7A1780017AC52 /* Version.swift */,
 				DA69AFCD20E8E18E006F0F91 /* VersionerProtocol.swift */,
 				DAA0192B20E7A1780017AC52 /* Versioner.swift */,
-				DA78D79720E7B4F7007672E3 /* Updater.swift */,
 				DA78D79B20E7B6A3007672E3 /* ReaderProtocol.swift */,
 				DA78D79F20E7BAD1007672E3 /* Reader.swift */,
 				DA78D79D20E7B6B0007672E3 /* WriterProtocol.swift */,

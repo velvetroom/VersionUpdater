@@ -2,4 +2,4 @@
 
 import VersionUpdater
 
-let updater:VersionUpdater = VersionUpdater()
+Updater().update()
