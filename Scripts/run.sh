@@ -1,10 +1,13 @@
 #!/bin/bash
 
-sourceFiles=$(find . -type f -name "*.swift" ! -path "*/Tests/*")
-for sourceFile in $sourceFiles
-do
-sourceList=$sourceList$sourceFile" "
-done
+if [ ! -f "bin/Updater" ]; then
+  sourceFiles=$(find Source -type f -name "*.swift" ! -path "*/Tests/*")
 
-swiftc $sourceList -o Updater
-./Updater $commits
+  for sourceFile in $sourceFiles
+  do
+    sourceList=$sourceList$sourceFile" "
+  done
+  echo "building "$sourceList
+  swiftc $sourceList -o "bin/SwiftToShell"
+fi
+#./Updater $commits

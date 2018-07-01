@@ -51,14 +51,14 @@
 			remoteGlobalIDString = DAFD569320E6FEDC00F721AF;
 			remoteInfo = Tests;
 		};
-		DA5934EC20E7A33300628404 /* PBXContainerItemProxy */ = {
+		DA69AFE520E901E9006F0F91 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DAFD562420E6F5C900F721AF /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DAA0191C20E7A1030017AC52;
 			remoteInfo = VersionUpdater;
 		};
-		DAA0193320E7A25B0017AC52 /* PBXContainerItemProxy */ = {
+		DA69AFEA20E9035E006F0F91 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DA079F2420E723D7009F9093 /* SwiftToShell.xcodeproj */;
 			proxyType = 1;
@@ -90,6 +90,7 @@
 		DA69AFDC20E8F52F006F0F91 /* PropertyListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListProtocol.swift; sourceTree = "<group>"; };
 		DA69AFDE20E8F53F006F0F91 /* PropertyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyList.swift; sourceTree = "<group>"; };
 		DA69AFE020E8F5FD006F0F91 /* MockPropertyListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPropertyListProtocol.swift; sourceTree = "<group>"; };
+		DA69AFED20E9068E006F0F91 /* bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bin; sourceTree = "<group>"; };
 		DA78D79520E7B0AD007672E3 /* MockShellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockShellProtocol.swift; sourceTree = "<group>"; };
 		DA78D79720E7B4F7007672E3 /* Updater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updater.swift; sourceTree = "<group>"; };
 		DA78D79920E7B527007672E3 /* TestUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUpdater.swift; sourceTree = "<group>"; };
@@ -189,6 +190,7 @@
 				DA4C50F420E7208E00902A64 /* Frameworks */,
 				DAFD564220E6F75E00F721AF /* Configuration */,
 				DAFD564620E6F79900F721AF /* Scripts */,
+				DA69AFED20E9068E006F0F91 /* bin */,
 				DAFD564D20E6F7B700F721AF /* main.swift */,
 				DAFD564320E6F75E00F721AF /* LICENSE */,
 				DAFD564420E6F75F00F721AF /* README.md */,
@@ -248,7 +250,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DA5934ED20E7A33300628404 /* PBXTargetDependency */,
+				DA69AFE620E901E9006F0F91 /* PBXTargetDependency */,
 			);
 			name = Main;
 			productName = Main;
@@ -267,7 +269,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DAA0193420E7A25B0017AC52 /* PBXTargetDependency */,
+				DA69AFEB20E9035E006F0F91 /* PBXTargetDependency */,
 			);
 			name = VersionUpdater;
 			productName = VersionUpdater;
@@ -421,15 +423,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DA5934ED20E7A33300628404 /* PBXTargetDependency */ = {
+		DA69AFE620E901E9006F0F91 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DAA0191C20E7A1030017AC52 /* VersionUpdater */;
-			targetProxy = DA5934EC20E7A33300628404 /* PBXContainerItemProxy */;
+			targetProxy = DA69AFE520E901E9006F0F91 /* PBXContainerItemProxy */;
 		};
-		DAA0193420E7A25B0017AC52 /* PBXTargetDependency */ = {
+		DA69AFEB20E9035E006F0F91 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftToShell;
-			targetProxy = DAA0193320E7A25B0017AC52 /* PBXContainerItemProxy */;
+			targetProxy = DA69AFEA20E9035E006F0F91 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
