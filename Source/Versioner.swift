@@ -1,7 +1,7 @@
 import Foundation
 import SwiftToShell
 
-class Versioner {
+class Versioner:VersionerProtocol {
     var shell:Shell
     
     init() {
