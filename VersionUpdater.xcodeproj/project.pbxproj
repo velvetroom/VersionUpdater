@@ -32,7 +32,6 @@
 		DAA0192F20E7A1780017AC52 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192920E7A1780017AC52 /* Version.swift */; };
 		DAA0193020E7A1780017AC52 /* ErrorVersionUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192A20E7A1780017AC52 /* ErrorVersionUpdater.swift */; };
 		DAA0193120E7A1780017AC52 /* Versioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192B20E7A1780017AC52 /* Versioner.swift */; };
-		DAA0193220E7A1780017AC52 /* VersionUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192C20E7A1780017AC52 /* VersionUpdater.swift */; };
 		DAA0193520E7A2630017AC52 /* VersionUpdater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA0191D20E7A1030017AC52 /* VersionUpdater.framework */; };
 		DAFD564B20E6F7B000F721AF /* TestVersioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD564A20E6F7B000F721AF /* TestVersioner.swift */; };
 /* End PBXBuildFile section */
@@ -107,7 +106,6 @@
 		DAA0192920E7A1780017AC52 /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		DAA0192A20E7A1780017AC52 /* ErrorVersionUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorVersionUpdater.swift; sourceTree = "<group>"; };
 		DAA0192B20E7A1780017AC52 /* Versioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Versioner.swift; sourceTree = "<group>"; };
-		DAA0192C20E7A1780017AC52 /* VersionUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionUpdater.swift; sourceTree = "<group>"; };
 		DAFD563A20E6F65600F721AF /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFD564220E6F75E00F721AF /* Configuration */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Configuration; sourceTree = "<group>"; };
 		DAFD564320E6F75E00F721AF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -178,7 +176,6 @@
 				DA78D7A120E7BB13007672E3 /* Writer.swift */,
 				DA69AFDC20E8F52F006F0F91 /* PropertyListProtocol.swift */,
 				DA69AFDE20E8F53F006F0F91 /* PropertyList.swift */,
-				DAA0192C20E7A1780017AC52 /* VersionUpdater.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -390,7 +387,6 @@
 				DAA0193120E7A1780017AC52 /* Versioner.swift in Sources */,
 				DA69AFCE20E8E18E006F0F91 /* VersionerProtocol.swift in Sources */,
 				DAA0193020E7A1780017AC52 /* ErrorVersionUpdater.swift in Sources */,
-				DAA0193220E7A1780017AC52 /* VersionUpdater.swift in Sources */,
 				DA69AFDD20E8F52F006F0F91 /* PropertyListProtocol.swift in Sources */,
 				DA78D7A020E7BAD1007672E3 /* Reader.swift in Sources */,
 				DA78D79E20E7B6B0007672E3 /* WriterProtocol.swift in Sources */,
