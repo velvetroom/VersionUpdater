@@ -1,14 +1,15 @@
 import XCTest
+import SwiftToShell
 @testable import VersionUpdater
 
 class TestVersioner:XCTestCase {
     private var model:Versioner!
-    private var shell:MockShell!
+    private var shell:MockShellProtocol!
     
     override func setUp() {
         super.setUp()
         self.model = Versioner()
-        self.shell = MockShell()
+        self.shell = MockShellProtocol()
         self.model.shell = self.shell
     }
     
@@ -34,5 +35,10 @@ class TestVersioner:XCTestCase {
         expected.build = Constants.Version.defaultBuild + 1
         let version:Version = self.model.nextVersion()
         XCTAssertEqual(expected, version, "Invalid version")
+    }
+    
+    func testNotRetainingShell() {
+        self.model.shell = MockShellProtocol()
+        XCTAssertNil(self.model.shell, "Retaining shell")
     }
 }

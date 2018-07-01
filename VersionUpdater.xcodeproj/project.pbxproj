@@ -11,7 +11,7 @@
 		DA3B9BBF20E79EC500596635 /* SwiftToShell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA079F2A20E723D7009F9093 /* SwiftToShell.framework */; };
 		DA69AFCE20E8E18E006F0F91 /* VersionerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69AFCD20E8E18E006F0F91 /* VersionerProtocol.swift */; };
 		DA69AFD120E8E1F6006F0F91 /* MockVersionerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69AFD020E8E1F6006F0F91 /* MockVersionerProtocol.swift */; };
-		DA78D79620E7B0AD007672E3 /* MockShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D79520E7B0AD007672E3 /* MockShell.swift */; };
+		DA78D79620E7B0AD007672E3 /* MockShellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D79520E7B0AD007672E3 /* MockShellProtocol.swift */; };
 		DA78D79820E7B4F7007672E3 /* Updater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D79720E7B4F7007672E3 /* Updater.swift */; };
 		DA78D79A20E7B527007672E3 /* TestUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D79920E7B527007672E3 /* TestUpdater.swift */; };
 		DA78D79C20E7B6A3007672E3 /* ReaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D79B20E7B6A3007672E3 /* ReaderProtocol.swift */; };
@@ -79,7 +79,7 @@
 		DA3B9BBC20E79DF100596635 /* TestVersionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVersionFactory.swift; sourceTree = "<group>"; };
 		DA69AFCD20E8E18E006F0F91 /* VersionerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionerProtocol.swift; sourceTree = "<group>"; };
 		DA69AFD020E8E1F6006F0F91 /* MockVersionerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockVersionerProtocol.swift; sourceTree = "<group>"; };
-		DA78D79520E7B0AD007672E3 /* MockShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockShell.swift; sourceTree = "<group>"; };
+		DA78D79520E7B0AD007672E3 /* MockShellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockShellProtocol.swift; sourceTree = "<group>"; };
 		DA78D79720E7B4F7007672E3 /* Updater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updater.swift; sourceTree = "<group>"; };
 		DA78D79920E7B527007672E3 /* TestUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUpdater.swift; sourceTree = "<group>"; };
 		DA78D79B20E7B6A3007672E3 /* ReaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderProtocol.swift; sourceTree = "<group>"; };
@@ -201,7 +201,7 @@
 				DA78D79920E7B527007672E3 /* TestUpdater.swift */,
 				DAFD564A20E6F7B000F721AF /* TestVersioner.swift */,
 				DA3B9BBC20E79DF100596635 /* TestVersionFactory.swift */,
-				DA78D79520E7B0AD007672E3 /* MockShell.swift */,
+				DA78D79520E7B0AD007672E3 /* MockShellProtocol.swift */,
 				DA78D7A320E7BBB9007672E3 /* MockReaderProtocol.swift */,
 				DA78D7A520E7BBC1007672E3 /* MockWriterProtocol.swift */,
 				DA69AFD020E8E1F6006F0F91 /* MockVersionerProtocol.swift */,
@@ -393,7 +393,7 @@
 				DA3B9BBD20E79DF100596635 /* TestVersionFactory.swift in Sources */,
 				DA78D7A420E7BBB9007672E3 /* MockReaderProtocol.swift in Sources */,
 				DA78D7A620E7BBC1007672E3 /* MockWriterProtocol.swift in Sources */,
-				DA78D79620E7B0AD007672E3 /* MockShell.swift in Sources */,
+				DA78D79620E7B0AD007672E3 /* MockShellProtocol.swift in Sources */,
 				DA69AFD120E8E1F6006F0F91 /* MockVersionerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,11 +2,7 @@ import Foundation
 import SwiftToShell
 
 class Versioner:VersionerProtocol {
-    var shell:Shell
-    
-    init() {
-        self.shell = Shell()
-    }
+    weak var shell:ShellProtocol!
     
     func nextVersion() -> Version {
         var version:Version = self.getNextTag()

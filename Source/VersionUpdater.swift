@@ -6,7 +6,7 @@ public class VersionUpdater {
 //    private let shell:Shell
     
     public init() {
-        let shell:Shell = Shell()
+//        let shell:Shell = Shell()
         
 //        self.shell = Shell()
         self.arguments = CommandLine.arguments/*
