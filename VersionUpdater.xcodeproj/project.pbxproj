@@ -112,7 +112,6 @@
 		DAFD564320E6F75E00F721AF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DAFD564420E6F75F00F721AF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DAFD564520E6F77C00F721AF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		DAFD564620E6F79900F721AF /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
 		DAFD564A20E6F7B000F721AF /* TestVersioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestVersioner.swift; sourceTree = "<group>"; };
 		DAFD564D20E6F7B700F721AF /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,7 +188,6 @@
 				DAFD562D20E6F5C900F721AF /* Products */,
 				DA4C50F420E7208E00902A64 /* Frameworks */,
 				DAFD564220E6F75E00F721AF /* Configuration */,
-				DAFD564620E6F79900F721AF /* Scripts */,
 				DA69AFED20E9068E006F0F91 /* bin */,
 				DAFD564D20E6F7B700F721AF /* main.swift */,
 				DAFD564320E6F75E00F721AF /* LICENSE */,
