@@ -1,10 +1,14 @@
 import Foundation
 
 struct Constants {
+    struct Arguments {
+        static let projectLocation:Int = 1
+    }
+    
     struct Plist {
-        static let location:String = "../Configuration/source.plist"
+        static let fileExtension:String = ".plist"
         static let versionKey:String = "CFBundleShortVersionString"
-        static let bundleKey:String = "CFBundleVersion"
+        static let buildKey:String = "CFBundleVersion"
     }
     
     struct Git {
