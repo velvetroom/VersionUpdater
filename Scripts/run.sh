@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sourceFiles=$(ls *.swift)
+sourceFiles=$(find . -type f -name "*.swift" ! -path "*/Tests/*")
 for sourceFile in $sourceFiles
 do
 sourceList=$sourceList$sourceFile" "
