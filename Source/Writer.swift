@@ -1,7 +1,7 @@
 import Foundation
 
 class Writer:WriterProtocol {
-    func updateProjectAt(path:String, with version:Version) throws {
+    func updateProjectAt(path:URL, with version:Version) throws {
         
     }
 }

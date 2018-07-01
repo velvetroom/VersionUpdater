@@ -1,5 +1,5 @@
 import Foundation
 
 protocol ReaderProtocol {
-    func getProjectPath() throws -> String
+    func getProjectPath() throws -> URL
 }

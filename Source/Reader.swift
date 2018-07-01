@@ -1,7 +1,7 @@
 import Foundation
 
 class Reader:ReaderProtocol {
-    func getProjectPath() throws -> String {
-        return String()
+    func getProjectPath() throws -> URL {
+        throw ErrorVersionUpdater.projectNotSpecified
     }
 }
