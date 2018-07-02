@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DA3B9BBD20E79DF100596635 /* TestVersionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B9BBC20E79DF100596635 /* TestVersionFactory.swift */; };
-		DA3B9BBF20E79EC500596635 /* SwiftToShell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA079F2A20E723D7009F9093 /* SwiftToShell.framework */; };
 		DA69AFCE20E8E18E006F0F91 /* VersionerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69AFCD20E8E18E006F0F91 /* VersionerProtocol.swift */; };
 		DA69AFD120E8E1F6006F0F91 /* MockVersionerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69AFD020E8E1F6006F0F91 /* MockVersionerProtocol.swift */; };
 		DA69AFD720E8EF4A006F0F91 /* TestReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69AFD620E8EF4A006F0F91 /* TestReader.swift */; };
@@ -26,10 +25,35 @@
 		DA78D7A220E7BB13007672E3 /* Writer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D7A120E7BB13007672E3 /* Writer.swift */; };
 		DA78D7A420E7BBB9007672E3 /* MockReaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D7A320E7BBB9007672E3 /* MockReaderProtocol.swift */; };
 		DA78D7A620E7BBC1007672E3 /* MockWriterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D7A520E7BBC1007672E3 /* MockWriterProtocol.swift */; };
-		DA9364EA20E9EB2300903F83 /* VersionUpdater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA0191D20E7A1030017AC52 /* VersionUpdater.framework */; };
-		DA9364EC20E9EB3300903F83 /* SwiftToShell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA079F2A20E723D7009F9093 /* SwiftToShell.framework */; };
-		DA9364F220E9F23C00903F83 /* SwiftToShell.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA079F2A20E723D7009F9093 /* SwiftToShell.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		DA9364F320E9F24E00903F83 /* VersionUpdater.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAA0191D20E7A1030017AC52 /* VersionUpdater.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA9364F420E9F53C00903F83 /* Updater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D79720E7B4F7007672E3 /* Updater.swift */; };
+		DA9364F520E9F53C00903F83 /* ErrorVersionUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192A20E7A1780017AC52 /* ErrorVersionUpdater.swift */; };
+		DA9364F620E9F53C00903F83 /* VersionUpdaterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192720E7A1780017AC52 /* VersionUpdaterConstants.swift */; };
+		DA9364F720E9F53C00903F83 /* VersionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192820E7A1780017AC52 /* VersionFactory.swift */; };
+		DA9364F820E9F53C00903F83 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192920E7A1780017AC52 /* Version.swift */; };
+		DA9364F920E9F53C00903F83 /* VersionerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69AFCD20E8E18E006F0F91 /* VersionerProtocol.swift */; };
+		DA9364FA20E9F53C00903F83 /* Versioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192B20E7A1780017AC52 /* Versioner.swift */; };
+		DA9364FB20E9F53C00903F83 /* ReaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D79B20E7B6A3007672E3 /* ReaderProtocol.swift */; };
+		DA9364FC20E9F53C00903F83 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D79F20E7BAD1007672E3 /* Reader.swift */; };
+		DA9364FD20E9F53C00903F83 /* WriterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D79D20E7B6B0007672E3 /* WriterProtocol.swift */; };
+		DA9364FE20E9F53C00903F83 /* Writer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D7A120E7BB13007672E3 /* Writer.swift */; };
+		DA9364FF20E9F53C00903F83 /* PropertyListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69AFDC20E8F52F006F0F91 /* PropertyListProtocol.swift */; };
+		DA93650020E9F53C00903F83 /* PropertyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69AFDE20E8F53F006F0F91 /* PropertyList.swift */; };
+		DA93651E20E9F5FD00903F83 /* ShellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93650720E9F5E800903F83 /* ShellFactory.swift */; };
+		DA93651F20E9F5FD00903F83 /* ShellProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93650820E9F5E800903F83 /* ShellProviderProtocol.swift */; };
+		DA93652020E9F5FD00903F83 /* ShellPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93650920E9F5E800903F83 /* ShellPipe.swift */; };
+		DA93652120E9F5FD00903F83 /* SwiftToShellConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93650A20E9F5E800903F83 /* SwiftToShellConstants.swift */; };
+		DA93652220E9F5FD00903F83 /* StandardShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93650B20E9F5E800903F83 /* StandardShell.swift */; };
+		DA93652320E9F5FD00903F83 /* ShellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93650C20E9F5E800903F83 /* ShellProtocol.swift */; };
+		DA93652420E9F5FD00903F83 /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93650D20E9F5E800903F83 /* Shell.swift */; };
+		DA93652520E9F5FD00903F83 /* ShellProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93650E20E9F5E800903F83 /* ShellProcess.swift */; };
+		DA93652620E9F5FE00903F83 /* ShellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93650720E9F5E800903F83 /* ShellFactory.swift */; };
+		DA93652720E9F5FE00903F83 /* ShellProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93650820E9F5E800903F83 /* ShellProviderProtocol.swift */; };
+		DA93652820E9F5FE00903F83 /* ShellPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93650920E9F5E800903F83 /* ShellPipe.swift */; };
+		DA93652920E9F5FE00903F83 /* SwiftToShellConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93650A20E9F5E800903F83 /* SwiftToShellConstants.swift */; };
+		DA93652A20E9F5FE00903F83 /* StandardShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93650B20E9F5E800903F83 /* StandardShell.swift */; };
+		DA93652B20E9F5FE00903F83 /* ShellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93650C20E9F5E800903F83 /* ShellProtocol.swift */; };
+		DA93652C20E9F5FE00903F83 /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93650D20E9F5E800903F83 /* Shell.swift */; };
+		DA93652D20E9F5FE00903F83 /* ShellProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA93650E20E9F5E800903F83 /* ShellProcess.swift */; };
 		DAA0192520E7A15B0017AC52 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD564D20E6F7B700F721AF /* main.swift */; };
 		DAA0192D20E7A1780017AC52 /* VersionUpdaterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192720E7A1780017AC52 /* VersionUpdaterConstants.swift */; };
 		DAA0192E20E7A1780017AC52 /* VersionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192820E7A1780017AC52 /* VersionFactory.swift */; };
@@ -41,61 +65,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DA079F2920E723D7009F9093 /* PBXContainerItemProxy */ = {
+		DA93651A20E9F5E900903F83 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DA079F2420E723D7009F9093 /* SwiftToShell.xcodeproj */;
+			containerPortal = DA93651320E9F5E900903F83 /* SwiftToShell.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = DAFD568420E6FE5300F721AF;
 			remoteInfo = SwiftToShell;
 		};
-		DA079F2B20E723D7009F9093 /* PBXContainerItemProxy */ = {
+		DA93651C20E9F5E900903F83 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DA079F2420E723D7009F9093 /* SwiftToShell.xcodeproj */;
+			containerPortal = DA93651320E9F5E900903F83 /* SwiftToShell.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = DAFD569320E6FEDC00F721AF;
 			remoteInfo = Tests;
 		};
-		DA9364ED20E9F0AA00903F83 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DAFD562420E6F5C900F721AF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DAA0191C20E7A1030017AC52;
-			remoteInfo = VersionUpdater;
-		};
-		DA9364EF20E9F0B400903F83 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA079F2420E723D7009F9093 /* SwiftToShell.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = DAFD568320E6FE5300F721AF;
-			remoteInfo = SwiftToShell;
-		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		DA9364F120E9F22700903F83 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				DA9364F220E9F23C00903F83 /* SwiftToShell.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DAA0190F20E7A0EB0017AC52 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = usr/share/man/man1;
-			dstSubfolderSpec = 10;
-			files = (
-				DA9364F320E9F24E00903F83 /* VersionUpdater.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		DA079F2420E723D7009F9093 /* SwiftToShell.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftToShell.xcodeproj; path = SwiftToShell/SwiftToShell.xcodeproj; sourceTree = "<group>"; };
 		DA3B9BBC20E79DF100596635 /* TestVersionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVersionFactory.swift; sourceTree = "<group>"; };
 		DA69AFCD20E8E18E006F0F91 /* VersionerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionerProtocol.swift; sourceTree = "<group>"; };
 		DA69AFD020E8E1F6006F0F91 /* MockVersionerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockVersionerProtocol.swift; sourceTree = "<group>"; };
@@ -115,6 +101,23 @@
 		DA78D7A120E7BB13007672E3 /* Writer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Writer.swift; sourceTree = "<group>"; };
 		DA78D7A320E7BBB9007672E3 /* MockReaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockReaderProtocol.swift; sourceTree = "<group>"; };
 		DA78D7A520E7BBC1007672E3 /* MockWriterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWriterProtocol.swift; sourceTree = "<group>"; };
+		DA93650320E9F5E800903F83 /* tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = tests.plist; sourceTree = "<group>"; };
+		DA93650420E9F5E800903F83 /* source.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = source.plist; sourceTree = "<group>"; };
+		DA93650520E9F5E800903F83 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DA93650720E9F5E800903F83 /* ShellFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellFactory.swift; sourceTree = "<group>"; };
+		DA93650820E9F5E800903F83 /* ShellProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellProviderProtocol.swift; sourceTree = "<group>"; };
+		DA93650920E9F5E800903F83 /* ShellPipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellPipe.swift; sourceTree = "<group>"; };
+		DA93650A20E9F5E800903F83 /* SwiftToShellConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftToShellConstants.swift; sourceTree = "<group>"; };
+		DA93650B20E9F5E800903F83 /* StandardShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardShell.swift; sourceTree = "<group>"; };
+		DA93650C20E9F5E800903F83 /* ShellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellProtocol.swift; sourceTree = "<group>"; };
+		DA93650D20E9F5E800903F83 /* Shell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
+		DA93650E20E9F5E800903F83 /* ShellProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellProcess.swift; sourceTree = "<group>"; };
+		DA93651020E9F5E900903F83 /* MockShellProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockShellProviderProtocol.swift; sourceTree = "<group>"; };
+		DA93651120E9F5E900903F83 /* TestShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestShell.swift; sourceTree = "<group>"; };
+		DA93651220E9F5E900903F83 /* TestStandardShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStandardShell.swift; sourceTree = "<group>"; };
+		DA93651320E9F5E900903F83 /* SwiftToShell.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SwiftToShell.xcodeproj; sourceTree = "<group>"; };
+		DA93651620E9F5E900903F83 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DA93651720E9F5E900903F83 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		DAA0191120E7A0EB0017AC52 /* Main */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Main; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA0191D20E7A1030017AC52 /* VersionUpdater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VersionUpdater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA0192720E7A1780017AC52 /* VersionUpdaterConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionUpdaterConstants.swift; sourceTree = "<group>"; };
@@ -136,7 +139,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA9364EA20E9EB2300903F83 /* VersionUpdater.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +146,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA9364EC20E9EB3300903F83 /* SwiftToShell.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,28 +154,67 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA0193520E7A2630017AC52 /* VersionUpdater.framework in Frameworks */,
-				DA3B9BBF20E79EC500596635 /* SwiftToShell.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DA079F2520E723D7009F9093 /* Products */ = {
+		DA93650120E9F5E800903F83 /* SwiftToShell */ = {
 			isa = PBXGroup;
 			children = (
-				DA079F2A20E723D7009F9093 /* SwiftToShell.framework */,
-				DA079F2C20E723D7009F9093 /* Tests.xctest */,
+				DA93650220E9F5E800903F83 /* Configuration */,
+				DA93650620E9F5E800903F83 /* Source */,
+				DA93650F20E9F5E800903F83 /* Tests */,
+				DA93651320E9F5E900903F83 /* SwiftToShell.xcodeproj */,
+				DA93651620E9F5E900903F83 /* README.md */,
+				DA93650520E9F5E800903F83 /* LICENSE */,
+				DA93651720E9F5E900903F83 /* .gitignore */,
 			);
-			name = Products;
+			path = SwiftToShell;
 			sourceTree = "<group>";
 		};
-		DA4C50F420E7208E00902A64 /* Frameworks */ = {
+		DA93650220E9F5E800903F83 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				DA079F2420E723D7009F9093 /* SwiftToShell.xcodeproj */,
+				DA93650320E9F5E800903F83 /* tests.plist */,
+				DA93650420E9F5E800903F83 /* source.plist */,
 			);
-			name = Frameworks;
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		DA93650620E9F5E800903F83 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DA93650720E9F5E800903F83 /* ShellFactory.swift */,
+				DA93650820E9F5E800903F83 /* ShellProviderProtocol.swift */,
+				DA93650920E9F5E800903F83 /* ShellPipe.swift */,
+				DA93650A20E9F5E800903F83 /* SwiftToShellConstants.swift */,
+				DA93650B20E9F5E800903F83 /* StandardShell.swift */,
+				DA93650C20E9F5E800903F83 /* ShellProtocol.swift */,
+				DA93650D20E9F5E800903F83 /* Shell.swift */,
+				DA93650E20E9F5E800903F83 /* ShellProcess.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		DA93650F20E9F5E800903F83 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DA93651020E9F5E900903F83 /* MockShellProviderProtocol.swift */,
+				DA93651120E9F5E900903F83 /* TestShell.swift */,
+				DA93651220E9F5E900903F83 /* TestStandardShell.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		DA93651420E9F5E900903F83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA93651B20E9F5E900903F83 /* SwiftToShell.framework */,
+				DA93651D20E9F5E900903F83 /* Tests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		DAA0192620E7A1780017AC52 /* Source */ = {
@@ -202,8 +242,8 @@
 			children = (
 				DAA0192620E7A1780017AC52 /* Source */,
 				DAFD564920E6F7B000F721AF /* Tests */,
+				DA93650120E9F5E800903F83 /* SwiftToShell */,
 				DAFD562D20E6F5C900F721AF /* Products */,
-				DA4C50F420E7208E00902A64 /* Frameworks */,
 				DAFD564220E6F75E00F721AF /* Configuration */,
 				DA69AFED20E9068E006F0F91 /* bin */,
 				DAFD564D20E6F7B700F721AF /* main.swift */,
@@ -260,12 +300,10 @@
 			buildPhases = (
 				DAA0190D20E7A0EB0017AC52 /* Sources */,
 				DAA0190E20E7A0EB0017AC52 /* Frameworks */,
-				DAA0190F20E7A0EB0017AC52 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DA9364EE20E9F0AA00903F83 /* PBXTargetDependency */,
 			);
 			name = Main;
 			productName = Main;
@@ -280,12 +318,10 @@
 				DAA0191920E7A1030017AC52 /* Frameworks */,
 				DAA0191A20E7A1030017AC52 /* Headers */,
 				DAA0191B20E7A1030017AC52 /* Resources */,
-				DA9364F120E9F22700903F83 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DA9364F020E9F0B400903F83 /* PBXTargetDependency */,
 			);
 			name = VersionUpdater;
 			productName = VersionUpdater;
@@ -342,8 +378,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = DA079F2520E723D7009F9093 /* Products */;
-					ProjectRef = DA079F2420E723D7009F9093 /* SwiftToShell.xcodeproj */;
+					ProductGroup = DA93651420E9F5E900903F83 /* Products */;
+					ProjectRef = DA93651320E9F5E900903F83 /* SwiftToShell.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -356,18 +392,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		DA079F2A20E723D7009F9093 /* SwiftToShell.framework */ = {
+		DA93651B20E9F5E900903F83 /* SwiftToShell.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SwiftToShell.framework;
-			remoteRef = DA079F2920E723D7009F9093 /* PBXContainerItemProxy */;
+			remoteRef = DA93651A20E9F5E900903F83 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		DA079F2C20E723D7009F9093 /* Tests.xctest */ = {
+		DA93651D20E9F5E900903F83 /* Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = Tests.xctest;
-			remoteRef = DA079F2B20E723D7009F9093 /* PBXContainerItemProxy */;
+			remoteRef = DA93651C20E9F5E900903F83 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -394,7 +430,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA93652320E9F5FD00903F83 /* ShellProtocol.swift in Sources */,
+				DA9364FE20E9F53C00903F83 /* Writer.swift in Sources */,
+				DA9364FD20E9F53C00903F83 /* WriterProtocol.swift in Sources */,
+				DA9364F620E9F53C00903F83 /* VersionUpdaterConstants.swift in Sources */,
+				DA93652120E9F5FD00903F83 /* SwiftToShellConstants.swift in Sources */,
+				DA9364FB20E9F53C00903F83 /* ReaderProtocol.swift in Sources */,
+				DA9364FF20E9F53C00903F83 /* PropertyListProtocol.swift in Sources */,
+				DA9364FC20E9F53C00903F83 /* Reader.swift in Sources */,
+				DA9364F520E9F53C00903F83 /* ErrorVersionUpdater.swift in Sources */,
+				DA93652220E9F5FD00903F83 /* StandardShell.swift in Sources */,
+				DA9364F920E9F53C00903F83 /* VersionerProtocol.swift in Sources */,
+				DA9364F720E9F53C00903F83 /* VersionFactory.swift in Sources */,
+				DA93651E20E9F5FD00903F83 /* ShellFactory.swift in Sources */,
 				DAA0192520E7A15B0017AC52 /* main.swift in Sources */,
+				DA93651F20E9F5FD00903F83 /* ShellProviderProtocol.swift in Sources */,
+				DA93652420E9F5FD00903F83 /* Shell.swift in Sources */,
+				DA93652520E9F5FD00903F83 /* ShellProcess.swift in Sources */,
+				DA93652020E9F5FD00903F83 /* ShellPipe.swift in Sources */,
+				DA93650020E9F53C00903F83 /* PropertyList.swift in Sources */,
+				DA9364F820E9F53C00903F83 /* Version.swift in Sources */,
+				DA9364F420E9F53C00903F83 /* Updater.swift in Sources */,
+				DA9364FA20E9F53C00903F83 /* Versioner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,16 +459,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA93652920E9F5FE00903F83 /* SwiftToShellConstants.swift in Sources */,
+				DA93652820E9F5FE00903F83 /* ShellPipe.swift in Sources */,
+				DA93652C20E9F5FE00903F83 /* Shell.swift in Sources */,
 				DAA0193120E7A1780017AC52 /* Versioner.swift in Sources */,
 				DA69AFCE20E8E18E006F0F91 /* VersionerProtocol.swift in Sources */,
 				DAA0193020E7A1780017AC52 /* ErrorVersionUpdater.swift in Sources */,
 				DA69AFDD20E8F52F006F0F91 /* PropertyListProtocol.swift in Sources */,
+				DA93652B20E9F5FE00903F83 /* ShellProtocol.swift in Sources */,
+				DA93652D20E9F5FE00903F83 /* ShellProcess.swift in Sources */,
 				DA78D7A020E7BAD1007672E3 /* Reader.swift in Sources */,
 				DA78D79E20E7B6B0007672E3 /* WriterProtocol.swift in Sources */,
 				DA78D79C20E7B6A3007672E3 /* ReaderProtocol.swift in Sources */,
+				DA93652A20E9F5FE00903F83 /* StandardShell.swift in Sources */,
 				DAA0192D20E7A1780017AC52 /* VersionUpdaterConstants.swift in Sources */,
 				DAA0192F20E7A1780017AC52 /* Version.swift in Sources */,
+				DA93652620E9F5FE00903F83 /* ShellFactory.swift in Sources */,
 				DA69AFDF20E8F53F006F0F91 /* PropertyList.swift in Sources */,
+				DA93652720E9F5FE00903F83 /* ShellProviderProtocol.swift in Sources */,
 				DAA0192E20E7A1780017AC52 /* VersionFactory.swift in Sources */,
 				DA78D79820E7B4F7007672E3 /* Updater.swift in Sources */,
 				DA78D7A220E7BB13007672E3 /* Writer.swift in Sources */,
@@ -438,19 +503,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		DA9364EE20E9F0AA00903F83 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DAA0191C20E7A1030017AC52 /* VersionUpdater */;
-			targetProxy = DA9364ED20E9F0AA00903F83 /* PBXContainerItemProxy */;
-		};
-		DA9364F020E9F0B400903F83 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftToShell;
-			targetProxy = DA9364EF20E9F0B400903F83 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
 		DAA0191620E7A0EB0017AC52 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -473,7 +525,6 @@
 		DAA0192320E7A1030017AC52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -496,7 +547,6 @@
 		DAA0192420E7A1030017AC52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -566,11 +616,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"@loader_path/Frameworks",
-					"@executable_path/../Frameworks",
-					"$(inherited)",
-				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -626,11 +671,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"@loader_path/Frameworks",
-					"@executable_path/../Frameworks",
-					"$(inherited)",
-				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;

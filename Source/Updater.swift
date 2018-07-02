@@ -1,5 +1,4 @@
 import Foundation
-import SwiftToShell
 
 public class Updater {
     var reader:ReaderProtocol

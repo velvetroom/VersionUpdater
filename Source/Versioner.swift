@@ -1,5 +1,4 @@
 import Foundation
-import SwiftToShell
 
 class Versioner:VersionerProtocol {
     weak var shell:ShellProtocol!
