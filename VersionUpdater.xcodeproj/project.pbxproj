@@ -26,6 +26,10 @@
 		DA78D7A220E7BB13007672E3 /* Writer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D7A120E7BB13007672E3 /* Writer.swift */; };
 		DA78D7A420E7BBB9007672E3 /* MockReaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D7A320E7BBB9007672E3 /* MockReaderProtocol.swift */; };
 		DA78D7A620E7BBC1007672E3 /* MockWriterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA78D7A520E7BBC1007672E3 /* MockWriterProtocol.swift */; };
+		DA9364EA20E9EB2300903F83 /* VersionUpdater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA0191D20E7A1030017AC52 /* VersionUpdater.framework */; };
+		DA9364EC20E9EB3300903F83 /* SwiftToShell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA079F2A20E723D7009F9093 /* SwiftToShell.framework */; };
+		DA9364F220E9F23C00903F83 /* SwiftToShell.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA079F2A20E723D7009F9093 /* SwiftToShell.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA9364F320E9F24E00903F83 /* VersionUpdater.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DAA0191D20E7A1030017AC52 /* VersionUpdater.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DAA0192520E7A15B0017AC52 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFD564D20E6F7B700F721AF /* main.swift */; };
 		DAA0192D20E7A1780017AC52 /* VersionUpdaterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192720E7A1780017AC52 /* VersionUpdaterConstants.swift */; };
 		DAA0192E20E7A1780017AC52 /* VersionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0192820E7A1780017AC52 /* VersionFactory.swift */; };
@@ -51,14 +55,14 @@
 			remoteGlobalIDString = DAFD569320E6FEDC00F721AF;
 			remoteInfo = Tests;
 		};
-		DA69AFE520E901E9006F0F91 /* PBXContainerItemProxy */ = {
+		DA9364ED20E9F0AA00903F83 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DAFD562420E6F5C900F721AF /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DAA0191C20E7A1030017AC52;
 			remoteInfo = VersionUpdater;
 		};
-		DA69AFEA20E9035E006F0F91 /* PBXContainerItemProxy */ = {
+		DA9364EF20E9F0B400903F83 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DA079F2420E723D7009F9093 /* SwiftToShell.xcodeproj */;
 			proxyType = 1;
@@ -68,12 +72,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		DA9364F120E9F22700903F83 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DA9364F220E9F23C00903F83 /* SwiftToShell.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DAA0190F20E7A0EB0017AC52 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = usr/share/man/man1;
+			dstSubfolderSpec = 10;
 			files = (
+				DA9364F320E9F24E00903F83 /* VersionUpdater.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -121,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA9364EA20E9EB2300903F83 /* VersionUpdater.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA9364EC20E9EB3300903F83 /* SwiftToShell.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +265,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DA69AFE620E901E9006F0F91 /* PBXTargetDependency */,
+				DA9364EE20E9F0AA00903F83 /* PBXTargetDependency */,
 			);
 			name = Main;
 			productName = Main;
@@ -263,11 +280,12 @@
 				DAA0191920E7A1030017AC52 /* Frameworks */,
 				DAA0191A20E7A1030017AC52 /* Headers */,
 				DAA0191B20E7A1030017AC52 /* Resources */,
+				DA9364F120E9F22700903F83 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DA69AFEB20E9035E006F0F91 /* PBXTargetDependency */,
+				DA9364F020E9F0B400903F83 /* PBXTargetDependency */,
 			);
 			name = VersionUpdater;
 			productName = VersionUpdater;
@@ -421,15 +439,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DA69AFE620E901E9006F0F91 /* PBXTargetDependency */ = {
+		DA9364EE20E9F0AA00903F83 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DAA0191C20E7A1030017AC52 /* VersionUpdater */;
-			targetProxy = DA69AFE520E901E9006F0F91 /* PBXContainerItemProxy */;
+			targetProxy = DA9364ED20E9F0AA00903F83 /* PBXContainerItemProxy */;
 		};
-		DA69AFEB20E9035E006F0F91 /* PBXTargetDependency */ = {
+		DA9364F020E9F0B400903F83 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftToShell;
-			targetProxy = DA69AFEA20E9035E006F0F91 /* PBXContainerItemProxy */;
+			targetProxy = DA9364EF20E9F0B400903F83 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -455,11 +473,11 @@
 		DAA0192320E7A1030017AC52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -467,11 +485,6 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Configuration/source.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = iturbide.VersionUpdater;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -483,11 +496,11 @@
 		DAA0192420E7A1030017AC52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -495,11 +508,6 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Configuration/source.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = iturbide.VersionUpdater;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -558,6 +566,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@loader_path/Frameworks",
+					"@executable_path/../Frameworks",
+					"$(inherited)",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -613,6 +626,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@loader_path/Frameworks",
+					"@executable_path/../Frameworks",
+					"$(inherited)",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -630,11 +648,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				INFOPLIST_FILE = Configuration/tests.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = iturbide.VersionUpdater.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -647,11 +660,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7AMWG3RLHN;
 				INFOPLIST_FILE = Configuration/tests.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = iturbide.VersionUpdater.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
