@@ -25,7 +25,7 @@ class Reader:ReaderProtocol {
     }
     
     private func validateFileExistsAt(url:URL) throws {
-        if self.fileManager.fileExists(atPath:url.absoluteString) == false {
+        if self.fileManager.fileExists(atPath:url.path) == false {
             print(url.absoluteString)
             throw ErrorVersionUpdater.fileDoesNotExist
         }
