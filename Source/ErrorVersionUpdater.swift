@@ -8,7 +8,7 @@ struct ErrorVersionUpdater:LocalizedError {
     static let argumentNotFound:ErrorVersionUpdater = ErrorVersionUpdater(errorDescription:
         "Error Version Updater: Argument not found")
     static let fileDoesNotExist:ErrorVersionUpdater = ErrorVersionUpdater(errorDescription:
-        "Error Version Updater: File does not exists")
+        "Error Version Updater: File does not exist")
     static let invalidProjectFile:ErrorVersionUpdater = ErrorVersionUpdater(errorDescription:
         "Error Version Updater: Invalid project file")
 }
